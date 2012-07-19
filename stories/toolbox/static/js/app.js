@@ -1,20 +1,22 @@
 $(function() {
     //setup the user story accordion
     initAccordion = function() {
-        $('#stories').accordion({
+        $('.accordion').accordion({
             header: '> div > h3',
             active: false,
             collapsible: true,
             autoHeight: false
-        })
-        .sortable({
-            axis: 'y',
+        });
+
+        $('.sortable').sortable({
             handle: 'h3',
             stop: function(event, ui) {
                 // IE doesn't register the blur when sorting
                 // so trigger focusout handlers to remove .ui-state-focus
                 ui.item.children('h3').triggerHandler('focusout');
-            }
+            },
+            connectWith: '.sortable',
+            placeholder: 'ui-state-highlight ui-corner-all'
         });
     };
 

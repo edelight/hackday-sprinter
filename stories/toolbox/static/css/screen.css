@@ -47,22 +47,25 @@ body { margin: 0; font-size: 13px; line-height: 1.231; }
 body{font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:1.3em;}
 p{margin:0 0 1em;}
 ul{margin:0 0 1em;}
-h3,h3 a{font-weight:normal !important;}
+h1{border-bottom:1px solid #654B24;color:#654B24;font-size:18px;font-weight:normal !important;margin:0 0 1em;padding:0 0 5px;text-transform:uppercase;}
+h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .content{padding:10px;}
 .ui-widget{font-size:13px !important;line-height:1.3em !important;}
+.ui-state-highlight{height:30px;margin-top:1px;}
 .create-story{margin:0 0 20px;}
 .stories-column{float:left;width:60%;}
 .group{zoom:1;}
-.group div{margin:0 0 10px;}
+.group .sortable{margin:0 0 10px;}
 .project{font-weight:bold;text-transform:uppercase;}
-.priority{border-radius:9px;float:right;height:18px;width:18px;}
+.priority{border-radius:9px;height:18px;position:absolute;right:6px;top:6px;width:18px;}
 .priority-1{background:red;}
 .priority-2{background:gold;}
 .priority-3{background:limegreen;}
 .goals-column{float:right;width:35%;}
-.goal{min-height:100px;margin:0 0 1em;padding:10px;}
-.goal h3{margin:0 0 1em;text-transform:uppercase;}
-.goal h3 small{text-transform:none;}
+.goal{margin:0 0 1em;padding:10px;}
+.goal .sortable{min-height:60px;}
+.goal h2{margin:0 0 1em;text-transform:uppercase;}
+.goal h2 small{text-transform:none;}
 
 /*Modal Form*/
 #story-form{display:none;}
