@@ -11,6 +11,7 @@ story_resource = StoryResource()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
+    (r'^$', 'toolbox.views.main'),
     (r'^api/', include(project_resource.urls)),
     (r'^api/', include(goal_resource.urls)),
     (r'^api/', include(story_resource.urls)),
