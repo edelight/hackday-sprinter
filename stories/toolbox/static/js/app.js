@@ -23,7 +23,13 @@ $(function() {
     writeBacklog = function(template) {
         $.ajax({
             type: 'POST',
-            url: '',
+            url: '/api/stories/',
+            data: {
+                pid: $('#project').val(),
+                priority: $('#priority').val(),
+                title: $('#title').val(),
+                description: $('#story').val()
+            },
             dataType: 'json',
             success: function (response) {
                 console.log(response);
@@ -47,7 +53,7 @@ $(function() {
             click: function() {
                 var title    = $('#title').val(),
                     content  = $('#story').val(),
-                    project  = $('#project').val(),
+                    project  = $('#project').find('option:selected').text(),
                     priority = $('#priority').val()
                     template = $('<div class="group">' +
                                  '<h3><a href="#"><span class="project">' + project + '</span> &ndash; ' + title + '<span class="priority priority-' + priority + '"></span></a></h3>' +

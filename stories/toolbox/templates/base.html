@@ -67,7 +67,7 @@
                     <label class="label-top" for="project">Choose project</label>
                     <select name="project" id="project" class="select ui-widget-content ui-corner-all">
                         {% for proj in projects %}
-                        <option>{{ proj.name }}</option>
+                        <option value="{{ proj.id }}">{{ proj.name }}</option>
                         {% endfor %}
                     </select>
                 </div>
