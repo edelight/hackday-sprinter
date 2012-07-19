@@ -1,4 +1,5 @@
 # Django settings for stories project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -26,6 +27,8 @@ SITE_ID = 1
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
+
+BASE_PATH = os.path.abspath(os.path.dirname(__file__))
 
 MEDIA_ROOT = ''
 MEDIA_URL = ''
@@ -72,9 +75,7 @@ ROOT_URLCONF = 'toolbox.urls'
 WSGI_APPLICATION = 'toolbox.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    BASE_PATH + '/templates',
 )
 
 INSTALLED_APPS = (

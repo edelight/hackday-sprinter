@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="noarchive" />
+        <meta http-equiv="X-UA-Compatible" content="IE=latest" />
+        <title>{% block title %}Kitchen{% endblock %}</title>
+    </head>
+    <body>
+        <ul>Projects{% for proj in projects %}
+            <li>{{ proj.name }}</li>
+        {% endfor %}
+        </ul>
+        <ul>Goals{% for goal in goals %}
+            <li>{{ goal.title }}, {{ goal.started }}</li>
+        {% endfor %}
+        </ul>
+        <ul>Stories{% for story in stories %}
+            <li>{{ story.name }}, {{ story.project }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
