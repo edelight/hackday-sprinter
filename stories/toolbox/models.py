@@ -14,6 +14,7 @@ class Story(models.Model):
     priority = models.IntegerField(max_length=1, choices=PRIO, default=2)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
+    closed = models.DateTimeField(null=True, blank=True)
 
     class Meta:
         db_table = "story"
@@ -27,6 +28,7 @@ class Story(models.Model):
 class Goal(models.Model):
     title = models.CharField(max_length=64)
     description = models.TextField()
+    project = models.ForeignKey("Project")
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
     started = models.DateTimeField(null=True, blank=True)

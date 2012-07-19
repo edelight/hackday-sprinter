@@ -1,1 +1,658 @@
-[{"pk": 11, "model": "contenttypes.contenttype", "fields": {"model": "goal", "name": "Goal", "app_label": "toolbox"}}, {"pk": 12, "model": "contenttypes.contenttype", "fields": {"model": "project", "name": "Project", "app_label": "toolbox"}}, {"pk": 10, "model": "contenttypes.contenttype", "fields": {"model": "story", "name": "Story", "app_label": "toolbox"}}, {"pk": 8, "model": "contenttypes.contenttype", "fields": {"model": "apiaccess", "name": "api access", "app_label": "tastypie"}}, {"pk": 9, "model": "contenttypes.contenttype", "fields": {"model": "apikey", "name": "api key", "app_label": "tastypie"}}, {"pk": 4, "model": "contenttypes.contenttype", "fields": {"model": "contenttype", "name": "content type", "app_label": "contenttypes"}}, {"pk": 2, "model": "contenttypes.contenttype", "fields": {"model": "group", "name": "group", "app_label": "auth"}}, {"pk": 7, "model": "contenttypes.contenttype", "fields": {"model": "logentry", "name": "log entry", "app_label": "admin"}}, {"pk": 1, "model": "contenttypes.contenttype", "fields": {"model": "permission", "name": "permission", "app_label": "auth"}}, {"pk": 5, "model": "contenttypes.contenttype", "fields": {"model": "session", "name": "session", "app_label": "sessions"}}, {"pk": 6, "model": "contenttypes.contenttype", "fields": {"model": "site", "name": "site", "app_label": "sites"}}, {"pk": 3, "model": "contenttypes.contenttype", "fields": {"model": "user", "name": "user", "app_label": "auth"}}, {"pk": "b47df4ec2abfcf40b7fb740ce73d8870", "model": "sessions.session", "fields": {"expire_date": "2012-08-02T17:11:02.789Z", "session_data": "NzkzZDlmNDYzZTQxYWZkNGVlYWI5MzZhODhmNmE4YTU1OWMwMGM5YjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"}}, {"pk": 1, "model": "sites.site", "fields": {"domain": "example.com", "name": "example.com"}}, {"pk": 1, "model": "toolbox.story", "fields": {"priority": 1, "description": "Description:\r\n\r\nClient send a user ID\r\nAPI returns a list of collages created by that user sorted by 'like' count, ascending.\r\nOpen Issues:\r\n\r\nPagination or fix number?", "created": "2012-07-19T17:31:52.677Z", "title": "As client, I want to retrieve a list of a user's top 'liked' collages to show them on his public profile page", "modified": "2012-07-19T17:31:52.677Z", "project": 3, "goal": 2}}, {"pk": 2, "model": "toolbox.story", "fields": {"priority": 2, "description": "Description:\r\n\r\nClient sends user ID\r\nIf user has already 'liked' one or more collages:\r\nAPI returns a paginated list of collages\r\nElse:\r\nAPI returns empty list\r\nOpen Issues:\r\n\r\nShould the API already return full collage objects? ", "created": "2012-07-19T17:32:16.112Z", "title": "As client, I want to retrieve a list of collages a user 'liked' to display them on the user's public profile page", "modified": "2012-07-19T17:32:16.112Z", "project": 3, "goal": 2}}, {"pk": 3, "model": "toolbox.story", "fields": {"priority": 1, "description": "", "created": "2012-07-19T17:32:39.520Z", "title": "As advertiser I want to see my weekly sales number", "modified": "2012-07-19T17:32:39.520Z", "project": 2, "goal": 1}}, {"pk": 1, "model": "toolbox.goal", "fields": {"description": "Nice stats for advertiser and publisher", "created": "2012-07-19T17:30:35.096Z", "started": null, "title": "TRAC: Statistics on the Dashboard", "modified": "2012-07-19T17:30:35.096Z", "closed": null}}, {"pk": 2, "model": "toolbox.goal", "fields": {"description": "Style Editor\r\n", "created": "2012-07-19T17:30:51.507Z", "started": null, "title": "SYL: Styles Editor for SYL", "modified": "2012-07-19T17:30:51.507Z", "closed": null}}, {"pk": 1, "model": "toolbox.project", "fields": {"name": "edelight.de"}}, {"pk": 2, "model": "toolbox.project", "fields": {"name": "tracdelight.com"}}, {"pk": 3, "model": "toolbox.project", "fields": {"name": "stylesyoulove"}}, {"pk": 19, "model": "auth.permission", "fields": {"codename": "add_logentry", "name": "Can add log entry", "content_type": 7}}, {"pk": 20, "model": "auth.permission", "fields": {"codename": "change_logentry", "name": "Can change log entry", "content_type": 7}}, {"pk": 21, "model": "auth.permission", "fields": {"codename": "delete_logentry", "name": "Can delete log entry", "content_type": 7}}, {"pk": 1, "model": "auth.permission", "fields": {"codename": "add_group", "name": "Can add group", "content_type": 2}}, {"pk": 4, "model": "auth.permission", "fields": {"codename": "change_group", "name": "Can change group", "content_type": 2}}, {"pk": 7, "model": "auth.permission", "fields": {"codename": "delete_group", "name": "Can delete group", "content_type": 2}}, {"pk": 2, "model": "auth.permission", "fields": {"codename": "add_permission", "name": "Can add permission", "content_type": 1}}, {"pk": 5, "model": "auth.permission", "fields": {"codename": "change_permission", "name": "Can change permission", "content_type": 1}}, {"pk": 8, "model": "auth.permission", "fields": {"codename": "delete_permission", "name": "Can delete permission", "content_type": 1}}, {"pk": 3, "model": "auth.permission", "fields": {"codename": "add_user", "name": "Can add user", "content_type": 3}}, {"pk": 6, "model": "auth.permission", "fields": {"codename": "change_user", "name": "Can change user", "content_type": 3}}, {"pk": 9, "model": "auth.permission", "fields": {"codename": "delete_user", "name": "Can delete user", "content_type": 3}}, {"pk": 10, "model": "auth.permission", "fields": {"codename": "add_contenttype", "name": "Can add content type", "content_type": 4}}, {"pk": 11, "model": "auth.permission", "fields": {"codename": "change_contenttype", "name": "Can change content type", "content_type": 4}}, {"pk": 12, "model": "auth.permission", "fields": {"codename": "delete_contenttype", "name": "Can delete content type", "content_type": 4}}, {"pk": 13, "model": "auth.permission", "fields": {"codename": "add_session", "name": "Can add session", "content_type": 5}}, {"pk": 14, "model": "auth.permission", "fields": {"codename": "change_session", "name": "Can change session", "content_type": 5}}, {"pk": 15, "model": "auth.permission", "fields": {"codename": "delete_session", "name": "Can delete session", "content_type": 5}}, {"pk": 16, "model": "auth.permission", "fields": {"codename": "add_site", "name": "Can add site", "content_type": 6}}, {"pk": 17, "model": "auth.permission", "fields": {"codename": "change_site", "name": "Can change site", "content_type": 6}}, {"pk": 18, "model": "auth.permission", "fields": {"codename": "delete_site", "name": "Can delete site", "content_type": 6}}, {"pk": 22, "model": "auth.permission", "fields": {"codename": "add_apiaccess", "name": "Can add api access", "content_type": 8}}, {"pk": 24, "model": "auth.permission", "fields": {"codename": "change_apiaccess", "name": "Can change api access", "content_type": 8}}, {"pk": 26, "model": "auth.permission", "fields": {"codename": "delete_apiaccess", "name": "Can delete api access", "content_type": 8}}, {"pk": 23, "model": "auth.permission", "fields": {"codename": "add_apikey", "name": "Can add api key", "content_type": 9}}, {"pk": 25, "model": "auth.permission", "fields": {"codename": "change_apikey", "name": "Can change api key", "content_type": 9}}, {"pk": 27, "model": "auth.permission", "fields": {"codename": "delete_apikey", "name": "Can delete api key", "content_type": 9}}, {"pk": 28, "model": "auth.permission", "fields": {"codename": "add_goal", "name": "Can add Goal", "content_type": 11}}, {"pk": 31, "model": "auth.permission", "fields": {"codename": "change_goal", "name": "Can change Goal", "content_type": 11}}, {"pk": 34, "model": "auth.permission", "fields": {"codename": "delete_goal", "name": "Can delete Goal", "content_type": 11}}, {"pk": 29, "model": "auth.permission", "fields": {"codename": "add_project", "name": "Can add Project", "content_type": 12}}, {"pk": 32, "model": "auth.permission", "fields": {"codename": "change_project", "name": "Can change Project", "content_type": 12}}, {"pk": 35, "model": "auth.permission", "fields": {"codename": "delete_project", "name": "Can delete Project", "content_type": 12}}, {"pk": 30, "model": "auth.permission", "fields": {"codename": "add_story", "name": "Can add Story", "content_type": 10}}, {"pk": 33, "model": "auth.permission", "fields": {"codename": "change_story", "name": "Can change Story", "content_type": 10}}, {"pk": 36, "model": "auth.permission", "fields": {"codename": "delete_story", "name": "Can delete Story", "content_type": 10}}, {"pk": 1, "model": "auth.user", "fields": {"username": "admin", "first_name": "", "last_name": "", "is_active": true, "is_superuser": true, "is_staff": true, "last_login": "2012-07-19T17:11:02.724Z", "groups": [], "user_permissions": [], "password": "pbkdf2_sha256$10000$GMX9kY4wThbe$z6QuSNcbAPewnK2ivPbzmypzyqGhaif7KJv4/dDUZy0=", "email": "admin@a.de", "date_joined": "2012-07-19T17:10:50.092Z"}}, {"pk": 8, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2012-07-19T17:32:39.521Z", "object_repr": "As advertiser I want to see my weekly sales number", "object_id": "3", "change_message": "", "user": 1, "content_type": 10}}, {"pk": 7, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2012-07-19T17:32:16.114Z", "object_repr": "As client, I want to retrieve a list of collages a user 'liked' to display them on the user's public profile page", "object_id": "2", "change_message": "", "user": 1, "content_type": 10}}, {"pk": 6, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2012-07-19T17:31:52.678Z", "object_repr": "As client, I want to retrieve a list of a user's top 'liked' collages to show them on his public profile page", "object_id": "1", "change_message": "", "user": 1, "content_type": 10}}, {"pk": 5, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2012-07-19T17:31:07.231Z", "object_repr": "stylesyoulove", "object_id": "3", "change_message": "", "user": 1, "content_type": 12}}, {"pk": 4, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2012-07-19T17:30:51.511Z", "object_repr": "SYL: Styles Editor for SYL", "object_id": "2", "change_message": "", "user": 1, "content_type": 11}}, {"pk": 3, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2012-07-19T17:30:35.098Z", "object_repr": "TRAC: Statistics on the Dashboard", "object_id": "1", "change_message": "", "user": 1, "content_type": 11}}, {"pk": 2, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2012-07-19T17:29:55.334Z", "object_repr": "tracdelight.com", "object_id": "2", "change_message": "", "user": 1, "content_type": 12}}, {"pk": 1, "model": "admin.logentry", "fields": {"action_flag": 1, "action_time": "2012-07-19T17:29:49.944Z", "object_repr": "edelight.de", "object_id": "1", "change_message": "", "user": 1, "content_type": 12}}]
+[
+    {
+        "pk": 11, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "goal", 
+            "name": "Goal", 
+            "app_label": "toolbox"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "project", 
+            "name": "Project", 
+            "app_label": "toolbox"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "story", 
+            "name": "Story", 
+            "app_label": "toolbox"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "apiaccess", 
+            "name": "api access", 
+            "app_label": "tastypie"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "apikey", 
+            "name": "api key", 
+            "app_label": "tastypie"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": "b47df4ec2abfcf40b7fb740ce73d8870", 
+        "model": "sessions.session", 
+        "fields": {
+            "session_data": "NzkzZDlmNDYzZTQxYWZkNGVlYWI5MzZhODhmNmE4YTU1OWMwMGM5YjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n", 
+            "expire_date": "2012-08-02T17:11:02.789Z"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "example.com", 
+            "name": "example.com"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "toolbox.story", 
+        "fields": {
+            "project": 3, 
+            "description": "Description:\r\n\r\nClient send a user ID\r\nAPI returns a list of collages created by that user sorted by 'like' count, ascending.\r\nOpen Issues:\r\n\r\nPagination or fix number?", 
+            "title": "As client, I want to retrieve a list of a user's top 'liked' collages to show them on his public profile page", 
+            "created": "2012-07-19T17:31:52.677Z", 
+            "modified": "2012-07-19T17:31:52.677Z", 
+            "priority": 1, 
+            "goal": 2
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "toolbox.story", 
+        "fields": {
+            "project": 3, 
+            "description": "Description:\r\n\r\nClient sends user ID\r\nIf user has already 'liked' one or more collages:\r\nAPI returns a paginated list of collages\r\nElse:\r\nAPI returns empty list\r\nOpen Issues:\r\n\r\nShould the API already return full collage objects? ", 
+            "title": "As client, I want to retrieve a list of collages a user 'liked' to display them on the user's public profile page", 
+            "created": "2012-07-19T17:32:16.112Z", 
+            "modified": "2012-07-19T17:32:16.112Z", 
+            "priority": 2, 
+            "goal": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "toolbox.story", 
+        "fields": {
+            "project": 2, 
+            "description": "", 
+            "title": "As advertiser I want to see my weekly sales number", 
+            "created": "2012-07-19T17:32:39.520Z", 
+            "modified": "2012-07-19T17:32:39.520Z", 
+            "priority": 1, 
+            "goal": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "toolbox.goal", 
+        "fields": {
+            "project": 2,
+            "description": "Nice stats for advertiser and publisher", 
+            "title": "TRAC: Statistics on the Dashboard", 
+            "started": null, 
+            "created": "2012-07-19T17:30:35.096Z", 
+            "modified": "2012-07-19T17:30:35.096Z", 
+            "closed": null
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "toolbox.goal", 
+        "fields": {
+            "project": 2,
+            "description": "Style Editor\r\n", 
+            "title": "SYL: Styles Editor for SYL", 
+            "started": null, 
+            "created": "2012-07-19T17:30:51.507Z", 
+            "modified": "2012-07-19T17:30:51.507Z", 
+            "closed": null
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "toolbox.project", 
+        "fields": {
+            "name": "edelight.de"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "toolbox.project", 
+        "fields": {
+            "name": "tracdelight.com"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "toolbox.project", 
+        "fields": {
+            "name": "stylesyoulove"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_site", 
+            "name": "Can add site", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_site", 
+            "name": "Can change site", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_site", 
+            "name": "Can delete site", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_apiaccess", 
+            "name": "Can add api access", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_apiaccess", 
+            "name": "Can change api access", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_apiaccess", 
+            "name": "Can delete api access", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_apikey", 
+            "name": "Can add api key", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_apikey", 
+            "name": "Can change api key", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_apikey", 
+            "name": "Can delete api key", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_goal", 
+            "name": "Can add Goal", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_goal", 
+            "name": "Can change Goal", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_goal", 
+            "name": "Can delete Goal", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_project", 
+            "name": "Can add Project", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_project", 
+            "name": "Can change Project", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_project", 
+            "name": "Can delete Project", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_story", 
+            "name": "Can add Story", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_story", 
+            "name": "Can change Story", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_story", 
+            "name": "Can delete Story", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "admin", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-07-19T17:11:02.724Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$GMX9kY4wThbe$z6QuSNcbAPewnK2ivPbzmypzyqGhaif7KJv4/dDUZy0=", 
+            "email": "admin@a.de", 
+            "date_joined": "2012-07-19T17:10:50.092Z"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-07-19T17:32:39.521Z", 
+            "object_repr": "As advertiser I want to see my weekly sales number", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-07-19T17:32:16.114Z", 
+            "object_repr": "As client, I want to retrieve a list of collages a user 'liked' to display them on the user's public profile page", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-07-19T17:31:52.678Z", 
+            "object_repr": "As client, I want to retrieve a list of a user's top 'liked' collages to show them on his public profile page", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-07-19T17:31:07.231Z", 
+            "object_repr": "stylesyoulove", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-07-19T17:30:51.511Z", 
+            "object_repr": "SYL: Styles Editor for SYL", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-07-19T17:30:35.098Z", 
+            "object_repr": "TRAC: Statistics on the Dashboard", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-07-19T17:29:55.334Z", 
+            "object_repr": "tracdelight.com", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-07-19T17:29:49.944Z", 
+            "object_repr": "edelight.de", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }
+]

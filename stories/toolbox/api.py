@@ -1,5 +1,6 @@
 from tastypie.authorization import Authorization
 from tastypie.resources import ModelResource
+from tastypie import fields
 
 from toolbox.models import Project, Goal, Story
 
@@ -17,6 +18,8 @@ class ProjectResource(BaseResource):
 
 
 class GoalResource(BaseResource):
+    project = fields.ForeignKey(ProjectResource, 'project', full=True)
+
     class Meta:
         queryset = Goal.objects.all()
         resource_name = 'goals'
@@ -24,6 +27,9 @@ class GoalResource(BaseResource):
 
 
 class StoryResource(BaseResource):
+    project = fields.ForeignKey(ProjectResource, 'project', full=True)
+    goal = fields.ForeignKey(GoalResource, 'goal', full=True)
+
     class Meta:
         queryset = Story.objects.all()
         resource_name = 'stories'
