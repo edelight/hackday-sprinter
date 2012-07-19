@@ -1,23 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="robots" content="noarchive" />
-        <meta http-equiv="X-UA-Compatible" content="IE=latest" />
-        <title>{% block title %}Kitchen{% endblock %}</title>
+        <meta charset="utf-8">
+
+        <title>{% block title %}Stories{% endblock %}</title>
+
+        <link rel="stylesheet" href="/static/css/pepper-grinder/jquery-ui-1.8.21.custom.css">
+        <link rel="stylesheet" href="/static/css/screen.css">
     </head>
+
     <body>
-        <ul>Projects{% for proj in projects %}
-            <li>{{ proj.name }}</li>
-        {% endfor %}
-        </ul>
         <ul>Goals{% for goal in goals %}
             <li>{{ goal.title }}, {{ goal.created }}</li>
         {% endfor %}
         </ul>
-        <ul>Stories{% for story in stories %}
-            <li>{{ story.title }}, {{ story.project }}</li>
-        {% endfor %}
-        </ul>
+
+        <div class="content">
+            <div id="create-story" class="create-story ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+                Create new user story
+            </div><div class="clearfix"></div>
+
+            <div id="stories" class="stories-column">
+                {% for story in stories %}
+                <div class="group">
+                    <h3>
+                        <a href="#">
+                            <span class="project">{{ story.project }}</span> 
+                            {{ story.title }}
+                            <span class="priority priority-{{ story.priority }}"></span>
+                        </a>
+                    </h3>
+                    <div>{{ story.description }}</div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div id="goals" class="goals-column">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="story-form" title="Create new user story">
+            <small class="validateTips">All form fields are required.</small>
+
+            <form>
+                <div class="fieldwrap floatleft">
+                    <label class="label-top" for="project">Choose project</label>
+                    <select name="project" id="project" class="select ui-widget-content ui-corner-all">
+                        {% for proj in projects %}
+                        <option>{{ proj.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="fieldwrap floatright">
+                    <label class="label-top" for="project">Set priority</label>
+                    <select name="priority" id="priority" class="select ui-widget-content ui-corner-all">
+                        <option value="1">1 - high</option>
+                        <option value="2">2 - medium</option>
+                        <option value="3">3 - low</option>
+                    </select>
+                </div><div class="clearfix"></div>
+
+                <label class="label-top" for="title">Title</label>
+                <input type="text" name="name" id="title" class="text ui-widget-content ui-corner-all">
+
+                <label class="label-top" for="story">As a user i want</label>
+                <textarea name="story" id="story" class="textarea ui-widget-content ui-corner-all"></textarea>
+            </form>
+        </div>
+
+        <script src="/static/js/libs/jquery-1.7.2.min.js"></script>
+        <script src="/static/js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+        <script src="/static/js/app.js"></script>
     </body>
 </html>
