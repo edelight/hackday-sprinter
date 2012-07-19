@@ -12,11 +12,11 @@
         {% endfor %}
         </ul>
         <ul>Goals{% for goal in goals %}
-            <li>{{ goal.title }}, {{ goal.started }}</li>
+            <li>{{ goal.title }}, {{ goal.created }}</li>
         {% endfor %}
         </ul>
         <ul>Stories{% for story in stories %}
-            <li>{{ story.name }}, {{ story.project }}</li>
+            <li>{{ story.title }}, {{ story.project }}</li>
         {% endfor %}
         </ul>
     </body>
