@@ -1,16 +1,17 @@
 from django.db import models
 
+
 class Story(models.Model):
     PRIO = (
-        ("1", "High"),
-        ("2", "Medium"),
-        ("3", "Low")
+        (1, "High"),
+        (2, "Medium"),
+        (3, "Low")
     )
     project = models.ForeignKey("Project")
-    goal = models.ForeignKey("Goal", blank=True)
+    goal = models.ForeignKey("Goal", null=True, blank=True)
     title = models.CharField(max_length=140)
-    description = models.TextField()
-    priority = models.CharField(max_length=1, choices=PRIO)
+    description = models.TextField(blank=True)
+    priority = models.IntegerField(max_length=1, choices=PRIO, default=2)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
@@ -28,8 +29,8 @@ class Goal(models.Model):
     description = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
-    started = models.DateTimeField()
-    closed = models.DateTimeField()
+    started = models.DateTimeField(null=True, blank=True)
+    closed = models.DateTimeField(null=True, blank=True)
 
     class Meta:
         db_table = "goal"
