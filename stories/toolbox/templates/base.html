@@ -10,9 +10,17 @@
     </head>
 
     <body>
+        <header class="page-head">
+            <img src="/static/img/sprinter_logo.png" class="floatleft" height="100" width="100">
+            <h1 class="floatleft">Sprinter</h1>
+            <div class="clearfix"></div>
+        </header>
+
         <div class="content">
             <div class="stories-column">
-                <h1>User stories</h1>
+                <header>
+                    <h1>User stories</h1>
+                </header>
 
                 <div id="create-story" class="create-story ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
                     Create new user story
@@ -35,7 +43,9 @@
             </div>
 
             <div class="goals-column">
-                <h1>Goals</h1>
+                <header>
+                    <h1>Goals</h1>
+                </header>
 
                 <div id="goals">
                     {% for goal in goals %}

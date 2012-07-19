@@ -44,10 +44,24 @@ body { margin: 0; font-size: 13px; line-height: 1.231; }
    Author: Mirko Höch
    Company: edelight GmbH
    ========================================================================== */
+@font-face {
+    font-family: 'UpperEastSideRegular';
+    src: url('UpperEastSide-webfont.eot');
+    src: url('UpperEastSide-webfont.eot?#iefix') format('embedded-opentype'),
+         url('UpperEastSide-webfont.woff') format('woff'),
+         url('UpperEastSide-webfont.ttf') format('truetype'),
+         url('UpperEastSide-webfont.svg#UpperEastSideRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:1.3em;}
 p{margin:0 0 1em;}
 ul{margin:0 0 1em;}
 h1{border-bottom:1px solid #654B24;color:#654B24;font-size:18px;font-weight:normal !important;margin:0 0 1em;padding:0 0 5px;text-transform:uppercase;}
+.page-head{background:url(images/ui-bg_fine-grain_10_f8f7f6_60x60.png) repeat scroll 50% 50% #F8F7F6;border-bottom:1px solid #654B24;margin:0 0 2em;padding:0 0 5px;}
+.page-head img{margin:0 10px;}
+.page-head h1{border:0;font-family:'UpperEastSideRegular';font-size:42px;line-height:100px;margin:0;padding:0;}
 h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .content{padding:10px;}
 .ui-widget{font-size:13px !important;line-height:1.3em !important;}
@@ -56,7 +70,7 @@ h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .stories-column{float:left;width:60%;}
 .stories{min-height:60px;}
 .group{zoom:1;}
-.group .sortable{margin:0 0 10px;}
+.group .sortable,.goal .sortable{margin:0 0 10px;}
 .project{font-weight:bold;text-transform:uppercase;}
 .priority{border-radius:9px;height:18px;position:absolute;right:6px;top:6px;width:18px;}
 .priority-1{background:red;}
@@ -66,7 +80,7 @@ h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .goal{margin:0 0 1em;padding:10px;}
 .goal .sortable{min-height:60px;}
 .goal h2{margin:0 0 1em;text-transform:uppercase;}
-.goal h2 small{text-transform:none;}
+.goal h2 small{font-size:9px;text-transform:none;}
 
 /*Modal Form*/
 #story-form{display:none;}

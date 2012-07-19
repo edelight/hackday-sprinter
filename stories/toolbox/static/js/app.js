@@ -31,8 +31,8 @@ $(function() {
         });
 
         $('#stories').prepend(template);
-        $('#stories').accordion('destroy');
         $('#story-form').dialog('close');
+        $('.accordion').accordion('destroy');
         initAccordion();
     };
 
