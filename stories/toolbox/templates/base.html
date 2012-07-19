@@ -10,11 +10,6 @@
     </head>
 
     <body>
-        <ul>Goals{% for goal in goals %}
-            <li>{{ goal.title }}, {{ goal.created }}</li>
-        {% endfor %}
-        </ul>
-
         <div class="content">
             <div id="create-story" class="create-story ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
                 Create new user story
@@ -36,6 +31,13 @@
             </div>
 
             <div id="goals" class="goals-column">
+                {% for goal in goals %}
+                    <div class="goal ui-widget ui-state-default ui-corner-all">
+                        <h3>{{ goal.title }}<small class="floatright">{{ goal.created }}</small></h3>
+
+                        <div class="dragzone"></div>
+                    </div>
+                {% endfor %}
             </div>
             <div class="clearfix"></div>
         </div>

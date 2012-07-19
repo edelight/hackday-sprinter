@@ -60,6 +60,9 @@ h3,h3 a{font-weight:normal !important;}
 .priority-2{background:gold;}
 .priority-3{background:limegreen;}
 .goals-column{float:right;width:35%;}
+.goal{min-height:100px;margin:0 0 1em;padding:10px;}
+.goal h3{margin:0 0 1em;text-transform:uppercase;}
+.goal h3 small{text-transform:none;}
 
 /*Modal Form*/
 #story-form{display:none;}
