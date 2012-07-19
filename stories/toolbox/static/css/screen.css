@@ -67,7 +67,7 @@ h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .ui-widget{font-size:13px !important;line-height:1.3em !important;}
 .ui-state-highlight{height:30px;margin-top:1px;}
 .create-story{margin:0 0 20px;}
-.stories-column{float:left;width:60%;}
+.stories-column{float:left;width:48%;}
 .stories{min-height:60px;}
 .group{zoom:1;}
 .group .sortable,.goal .sortable{margin:0 0 10px;}
@@ -76,7 +76,7 @@ h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .priority-1{background:red;}
 .priority-2{background:gold;}
 .priority-3{background:limegreen;}
-.goals-column{float:right;width:35%;}
+.goals-column{float:right;width:48%;}
 .goal{margin:0 0 1em;padding:10px;}
 .goal .sortable{min-height:60px;}
 .goal h2{margin:0 0 1em;text-transform:uppercase;}
