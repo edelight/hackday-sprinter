@@ -54,6 +54,7 @@ h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .ui-state-highlight{height:30px;margin-top:1px;}
 .create-story{margin:0 0 20px;}
 .stories-column{float:left;width:60%;}
+.stories{min-height:60px;}
 .group{zoom:1;}
 .group .sortable{margin:0 0 10px;}
 .project{font-weight:bold;text-transform:uppercase;}
