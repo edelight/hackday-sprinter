@@ -59,7 +59,7 @@ body{font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:1.3em;}
 p{margin:0 0 1em;}
 ul{margin:0 0 1em;}
 h1{border-bottom:1px solid #654B24;color:#654B24;font-size:18px;font-weight:normal !important;margin:0 0 1em;padding:0 0 5px;text-transform:uppercase;}
-.page-head{background:url(images/pepper-grinder/ui-bg_fine-grain_10_f8f7f6_60x60.png) repeat scroll 50% 50% #F8F7F6;border-bottom:1px solid #654B24;margin:0 0 2em;padding:0 0 5px;}
+.page-head{background:url(pepper-grinder/images/ui-bg_fine-grain_10_f8f7f6_60x60.png) repeat scroll 50% 50% #F8F7F6;border-bottom:1px solid #654B24;margin:0 0 2em;padding:0 0 5px;}
 .page-head img{margin:0 10px;}
 .page-head h1{border:0;font-family:'UpperEastSideRegular';font-size:50px;line-height:100px;margin:0;padding:0;}
 h2{font-weight:normal;font-size:16px;}

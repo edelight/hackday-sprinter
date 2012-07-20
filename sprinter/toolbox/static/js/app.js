@@ -16,6 +16,11 @@ $(function() {
                 if($(this).attr('data-project-id') !== ui.item.attr('data-project-id') && $(this).parent().hasClass('goal')) {
                     alert('Story project and goal project do not match!');
                     $(ui.sender).sortable('cancel');
+                } else {
+                    var storyid = ui.item.attr('data-story-id'),
+                        goalid  = $(this).attr('data-goal-id');
+
+                    updateStory(storyid, goalid);
                 }
             },
             stop: function(event, ui) {
@@ -73,6 +78,24 @@ $(function() {
         $('#goal-form').dialog('close');
         $('.accordion').accordion('destroy');
         initAccordion();
+    };
+
+    updateStory = function(storyid, goalid) {
+        var data = JSON.stringify({
+            "resource_uri": "/api/projects/" + goalid + "/"
+        });
+
+        $.ajax({
+            type: 'PATCH',
+            url: '/api/stories/' + storyid + '/',
+            data: data,
+            dataType: 'json',
+            contentType: 'application/json',
+            processData: false,
+            success: function (response) {
+                console.log(response);
+            }
+        });
     };
 
     //initialize the add story dialog
