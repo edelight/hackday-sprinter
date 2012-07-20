@@ -26,7 +26,7 @@ $(function() {
 
     writeBacklog = function(template) {
         var data = JSON.stringify({
-            "project": $('#project').val(),
+            "project":  "/api/projects/" + $('#project').val() + "/",
             "priority": $('#priority').val(),
             "title": $('#title').val(),
             "description": $('#story').val()
@@ -145,9 +145,11 @@ $(function() {
                 var title    = $('#goal-form #title').val(),
                     content  = $('#goal-form #goal').val(),
                     project  = $('#goal-form #project').find('option:selected').text(),
+                    date     = new Date(),
+                    formatteddate = date.format('mmmm dd, yyyy, h:MM tt'),
                     template = $('<div class="goal ui-widget ui-state-default ui-corner-all">' +
-                                 '<h2><span class="project">' + project + '</span> &ndash; ' + title + '<small class="floatright"></small></h2>' +
-                                 '<div>' + content + '</div>' +
+                                 '<h2><span class="project">' + project + '</span> &ndash; ' + title + '<small class="floatright">' + formatteddate + '</small></h2>' +
+                                 '<p>' + content + '</p>' +
                                  '</div>');
 
                 if(title === '') {

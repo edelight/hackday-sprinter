@@ -59,6 +59,7 @@
                                 {{ goal.title }}
                                 <small class="floatright">{{ goal.created }}</small>
                             </h2>
+                            <p>{{ goal.description }}</p>
 
                             <div class="sortable accordion" data-project-id="{{ goal.project.id }}"></div>
                         </div>
@@ -123,6 +124,7 @@
         <script src="/static/js/libs/jquery-1.7.2.min.js"></script>
         <script src="/static/js/libs/jquery-ui-1.8.21.custom.min.js"></script>
         <script src="/static/js/libs/json2.js"></script>
+        <script src="/static/js/libs/dateFormat.js"></script>
         <script src="/static/js/app.js"></script>
     </body>
 </html>
