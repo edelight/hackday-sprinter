@@ -168,7 +168,7 @@
         "fields": {
             "project": 2,
             "description": "Nice stats for advertiser and publisher", 
-            "title": "TRAC: Statistics on the Dashboard", 
+            "title": "Statistics on the Dashboard", 
             "started": null, 
             "created": "2012-07-19T17:30:35.096Z", 
             "modified": "2012-07-19T17:30:35.096Z", 
@@ -181,7 +181,7 @@
         "fields": {
             "project": 2,
             "description": "Style Editor\r\n", 
-            "title": "SYL: Styles Editor for SYL", 
+            "title": "Styles Editor for SYL", 
             "started": null, 
             "created": "2012-07-19T17:30:51.507Z", 
             "modified": "2012-07-19T17:30:51.507Z", 
@@ -549,97 +549,6 @@
             "password": "pbkdf2_sha256$10000$GMX9kY4wThbe$z6QuSNcbAPewnK2ivPbzmypzyqGhaif7KJv4/dDUZy0=", 
             "email": "admin@a.de", 
             "date_joined": "2012-07-19T17:10:50.092Z"
-        }
-    }, 
-    {
-        "pk": 8, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-07-19T17:32:39.521Z", 
-            "object_repr": "As advertiser I want to see my weekly sales number", 
-            "object_id": "3", 
-            "change_message": "", 
-            "user": 1, 
-            "content_type": 10
-        }
-    }, 
-    {
-        "pk": 7, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-07-19T17:32:16.114Z", 
-            "object_repr": "As client, I want to retrieve a list of collages a user 'liked' to display them on the user's public profile page", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 1, 
-            "content_type": 10
-        }
-    }, 
-    {
-        "pk": 6, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-07-19T17:31:52.678Z", 
-            "object_repr": "As client, I want to retrieve a list of a user's top 'liked' collages to show them on his public profile page", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 1, 
-            "content_type": 10
-        }
-    }, 
-    {
-        "pk": 5, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-07-19T17:31:07.231Z", 
-            "object_repr": "stylesyoulove", 
-            "object_id": "3", 
-            "change_message": "", 
-            "user": 1, 
-            "content_type": 12
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-07-19T17:30:51.511Z", 
-            "object_repr": "SYL: Styles Editor for SYL", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 1, 
-            "content_type": 11
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-07-19T17:30:35.098Z", 
-            "object_repr": "TRAC: Statistics on the Dashboard", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 1, 
-            "content_type": 11
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-07-19T17:29:55.334Z", 
-            "object_repr": "tracdelight.com", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 1, 
-            "content_type": 12
         }
     }, 
     {
