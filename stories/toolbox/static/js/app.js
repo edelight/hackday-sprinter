@@ -21,16 +21,20 @@ $(function() {
     };
 
     writeBacklog = function(template) {
+        var data = JSON.stringify({
+            "pid": $('#project').val(),
+            "priority": $('#priority').val(),
+            "title": $('#title').val(),
+            "description": $('#story').val()
+        });
+
         $.ajax({
             type: 'POST',
             url: '/api/stories/',
-            data: {
-                pid: $('#project').val(),
-                priority: $('#priority').val(),
-                title: $('#title').val(),
-                description: $('#story').val()
-            },
+            data: data,
             dataType: 'json',
+            contentType: 'application/json',
+            processData: false,
             success: function (response) {
                 console.log(response);
             }
