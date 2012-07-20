@@ -71,6 +71,8 @@ h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .stories-column{float:left;width:48%;}
 .stories{min-height:60px;}
 .group{zoom:1;}
+.accordion{display:none;}
+.content .ui-button{display:none;}
 .group .sortable,.goal .sortable{margin:0 0 10px;}
 .project{font-weight:bold;text-transform:uppercase;}
 .priority{border-radius:9px;height:18px;position:absolute;right:6px;top:6px;width:18px;}

@@ -27,6 +27,8 @@ $(function() {
                 ui.item.children('h3').triggerHandler('focusout');
             },
         });
+
+        $('.accordion').show();
     };
 
     writeBacklog = function(template) {
@@ -156,7 +158,7 @@ $(function() {
     //crate the add user story button
     $('#create-story').button().click(function() {
         $('#story-form').dialog('open');
-    });
+    }).css('display', 'inline-block');
 
 
     //initialize the add story dialog
@@ -217,7 +219,7 @@ $(function() {
     //crate the add goal button
     $('#create-goal').button().click(function() {
         $('#goal-form').dialog('open');
-    });
+    }).css('display', 'inline-block');
 
     initAccordion();
 });
