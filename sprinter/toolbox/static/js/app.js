@@ -81,8 +81,11 @@ $(function() {
     };
 
     updateStory = function(storyid, goalid) {
+        if(goalid === undefined)
+            goalid = '';
+
         var data = JSON.stringify({
-            "resource_uri": "/api/projects/" + goalid + "/"
+            "resource_uri": "/api/goals/" + goalid + "/"
         });
 
         $.ajax({
