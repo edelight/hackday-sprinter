@@ -22,7 +22,7 @@ $(function() {
 
     writeBacklog = function(template) {
         var data = JSON.stringify({
-            "pid": $('#project').val(),
+            "project": "/api/projects/" + $('#project').val() + "/",
             "priority": $('#priority').val(),
             "title": $('#title').val(),
             "description": $('#story').val()
@@ -58,7 +58,7 @@ $(function() {
                 var title    = $('#title').val(),
                     content  = $('#story').val(),
                     project  = $('#project').find('option:selected').text(),
-                    priority = $('#priority').val()
+                    priority = $('#priority').val(),
                     template = $('<div class="group">' +
                                  '<h3><a href="#"><span class="project">' + project + '</span> &ndash; ' + title + '<span class="priority priority-' + priority + '"></span></a></h3>' +
                                  '<div>' + content + '</div>' +
