@@ -62,6 +62,7 @@ h1{border-bottom:1px solid #654B24;color:#654B24;font-size:18px;font-weight:norm
 .page-head{background:url(images/pepper-grinder/ui-bg_fine-grain_10_f8f7f6_60x60.png) repeat scroll 50% 50% #F8F7F6;border-bottom:1px solid #654B24;margin:0 0 2em;padding:0 0 5px;}
 .page-head img{margin:0 10px;}
 .page-head h1{border:0;font-family:'UpperEastSideRegular';font-size:50px;line-height:100px;margin:0;padding:0;}
+h2{font-weight:normal;font-size:16px;}
 h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .content{padding:10px;}
 .ui-widget{font-size:13px !important;line-height:1.3em !important;}
@@ -79,7 +80,7 @@ h3,h3 a{font-weight:normal !important;padding-right:24px !important;}
 .goals-column{float:right;width:48%;}
 .goal{margin:0 0 1em;padding:10px;}
 .goal .sortable{min-height:60px;}
-.goal h2{margin:0 0 1em;text-transform:uppercase;}
+.goal h2{margin:0 0 1em;}
 .goal h2 small{font-size:9px;text-transform:none;}
 
 /*Modal Form*/

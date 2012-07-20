@@ -13,7 +13,7 @@ $(function() {
             connectWith: '.sortable',
             placeholder: 'ui-state-highlight ui-corner-all',
             receive: function(event, ui) { 
-                if($(this).attr('data-project-id') !== ui.item.attr('data-project-id')) {
+                if($(this).attr('data-project-id') !== ui.item.attr('data-project-id') && $(this).parent().hasClass('goal')) {
                     alert('Story project and goal project do not match!');
                     $(ui.sender).sortable('cancel');
                 }
