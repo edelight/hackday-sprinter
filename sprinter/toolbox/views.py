@@ -9,6 +9,7 @@ def main(request):
     """Default main view"""
     data = {'projects': Project.objects.all(), 
             'goals': Goal.objects.filter(closed__isnull=True),
-            'stories': Story.objects.filter(closed__isnull=True)}
+            'stories': Story.objects.filter(closed__isnull=True).order_by(
+                                            '-modified')}
     return render_to_response('base.html',
                               data, context_instance=RequestContext(request))
