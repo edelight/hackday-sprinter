@@ -23,4 +23,4 @@ pip-log.txt
 #Translations
 *.mo
 
-data.sql
+stories.sql

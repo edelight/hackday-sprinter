@@ -50,7 +50,7 @@
                 <div id="goals">
                     {% for goal in goals %}
                         <div class="goal ui-widget ui-state-default ui-corner-all">
-                            <h2>{{ goal.title }}<small class="floatright">{{ goal.created }}</small></h2>
+                            <h2>{{ goal.project }}: {{ goal.title }}<small class="floatright">{{ goal.created }}</small></h2>
 
                             <div class="sortable accordion"></div>
                         </div>
