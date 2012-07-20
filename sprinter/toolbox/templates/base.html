@@ -47,6 +47,10 @@
                     <h1>Goals</h1>
                 </header>
 
+                <div id="create-goal" class="create-goal ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+                    Create new goal
+                </div><div class="clearfix"></div>
+
                 <div id="goals">
                     {% for goal in goals %}
                         <div class="goal ui-widget ui-state-default ui-corner-all">
@@ -92,6 +96,29 @@
                 <textarea name="story" id="story" class="textarea ui-widget-content ui-corner-all"></textarea>
             </form>
         </div>
+
+        <div id="goal-form" title="Create new goal">
+            <small class="validateTips">All form fields are required.</small>
+
+            <form>
+                <div class="fieldwrap floatleft">
+                    <label class="label-top" for="project">Choose project</label>
+                    <select name="project" id="project" class="select ui-widget-content ui-corner-all">
+                        {% for proj in projects %}
+                        <option value="{{ proj.id }}">{{ proj.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="clearfix"></div>
+                
+                <label class="label-top" for="title">Title</label>
+                <input type="text" name="name" id="title" class="text ui-widget-content ui-corner-all">
+
+                <label class="label-top" for="goal">What is the goal?</label>
+                <textarea name="goal" id="goal" class="textarea ui-widget-content ui-corner-all"></textarea>
+            </form>
+        </div>
+
 
         <script src="/static/js/libs/jquery-1.7.2.min.js"></script>
         <script src="/static/js/libs/jquery-ui-1.8.21.custom.min.js"></script>
