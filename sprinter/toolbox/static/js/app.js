@@ -10,13 +10,17 @@ $(function() {
 
         $('.sortable').sortable({
             handle: 'h3',
+            connectWith: '.sortable',
+            placeholder: 'ui-state-highlight ui-corner-all',
+            receive: function(event, ui) { 
+                if($(this).attr('data-project-id') !== ui.item.attr('data-project-id')) {
+                    alert('Story project and goal project do not match!');
+                    $(ui.sender).sortable('cancel');
+                }
+            },
             stop: function(event, ui) {
-                // IE doesn't register the blur when sorting
-                // so trigger focusout handlers to remove .ui-state-focus
                 ui.item.children('h3').triggerHandler('focusout');
             },
-            connectWith: '.sortable',
-            placeholder: 'ui-state-highlight ui-corner-all'
         });
     };
 
