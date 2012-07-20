@@ -173,6 +173,7 @@ $(function() {
                     template = $('<div class="goal ui-widget ui-state-default ui-corner-all">' +
                                  '<h2><span class="project">' + project + '</span> &ndash; ' + title + '<small class="floatright">' + formatteddate + '</small></h2>' +
                                  '<p>' + content + '</p>' +
+                                 '<div class="sortable accordion" data-project-id="' + $('#goal-form #project').val() + '" data-goal-id=""></div>' +
                                  '</div>');
 
                 if(title === '') {
